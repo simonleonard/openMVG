@@ -418,13 +418,13 @@ ADD_SUBDIRECTORY(openMVG)
 # ==============================================================================
 SET(OpenMVG_LIBRARIES
   openMVG_image
-  openMVG_features
   openMVG_matching_image_collection
   openMVG_kvld
   openMVG_multiview
   openMVG_lInftyComputerVision
   openMVG_system
-  openMVG_sfm)
+  openMVG_sfm
+  openMVG_features)
 
 FOREACH(omvglib ${OpenMVG_LIBRARIES})
   SET_PROPERTY(TARGET ${omvglib} PROPERTY FOLDER OpenMVG/OpenMVG)
